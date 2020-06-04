@@ -11,7 +11,7 @@
     {
         // Connection String for the namespace can be obtained from the Azure portal under the 
         // 'Shared Access policies' section.
-        const string ServiceBusConnectionString = "Endpoint=sb://andyrob-sbtest-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=yIXr+s6Sy2f+a0NLmK/YQnc5aIClEfg4Ic0qAtC7G6o=";
+        const string ServiceBusConnectionString = "Endpoint=sb://andyrob-sbtest-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=<key>";
         const string QueueName = "test-q";
         static IQueueClient queueClient;
 
