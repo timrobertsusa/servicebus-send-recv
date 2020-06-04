@@ -5,6 +5,7 @@
     using System.Threading;
     using System.Threading.Tasks;
     using Microsoft.Azure.ServiceBus;
+    using System.Runtime.Loader;
 
     class Program
     {
@@ -27,9 +28,8 @@
             // Register QueueClient's MessageHandler and receive messages in a loop
             RegisterOnMessageHandlerAndReceiveMessages();
  
-            Console.Read();
+            PreventConsoleAppToExit();
 
-            await queueClient.CloseAsync();
         }
 
         static void RegisterOnMessageHandlerAndReceiveMessages()
@@ -74,5 +74,26 @@
             Console.WriteLine($"- Executing Action: {context.Action}");
             return Task.CompletedTask;
         }
-    }
+ private static void PreventConsoleAppToExit()
+        {
+            var ended = new ManualResetEventSlim();
+            var starting = new ManualResetEventSlim();
+
+            AssemblyLoadContext.Default.Unloading += ctx =>
+            {
+                Console.WriteLine("Unloding fired");
+                starting.Set();
+                Console.WriteLine("Waiting for completion");
+                ended.Wait();
+            };
+
+            Console.WriteLine("Waiting for signals");
+            starting.Wait();
+
+            Console.WriteLine("Received signal gracefully shutting down");
+            queueClient.CloseAsync();
+            Thread.Sleep(5000);
+            ended.Set();
+        }
+   }
 }

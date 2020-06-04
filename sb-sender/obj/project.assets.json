@@ -6345,11 +6345,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\sb-test\\sb-sender\\sb-sender.csproj",
+      "projectUniqueName": "C:\\projects\\ServiceBusTest\\sb-sender\\sb-sender.csproj",
       "projectName": "sb-sender",
-      "projectPath": "C:\\projects\\sb-test\\sb-sender\\sb-sender.csproj",
+      "projectPath": "C:\\projects\\ServiceBusTest\\sb-sender\\sb-sender.csproj",
       "packagesPath": "C:\\Users\\andyrob\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\sb-test\\sb-sender\\obj\\",
+      "outputPath": "C:\\projects\\ServiceBusTest\\sb-sender\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XZVccbrzrTJKaqTaIj5A+UIforUkBYk6x4V/kZKGNjdRW9tRSRjXYaenuH4fjqRo9oLKyb5JpGVGYJpXu/ZUDw==",
+  "dgSpecHash": "YnYQIRt/qo7D84B4+jqHSAFT/CfqzC77Zj1zCBmcjB4NIMYQNKPCCMsiXR8jUtcSsdQd6j7QjtahdaJbD9hV+g==",
   "success": true,
-  "projectFilePath": "C:\\projects\\sb-test\\sb-receiver\\sb-receiver.csproj",
+  "projectFilePath": "C:\\projects\\ServiceBusTest\\sb-receiver\\sb-receiver.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andyrob\\.nuget\\packages\\microsoft.azure.amqp\\2.4.2\\microsoft.azure.amqp.2.4.2.nupkg.sha512",
     "C:\\Users\\andyrob\\.nuget\\packages\\microsoft.azure.servicebus\\4.1.3\\microsoft.azure.servicebus.4.1.3.nupkg.sha512",

@@ -6345,11 +6345,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\sb-test\\sb-receiver\\sb-receiver.csproj",
+      "projectUniqueName": "C:\\projects\\ServiceBusTest\\sb-receiver\\sb-receiver.csproj",
       "projectName": "sb-receiver",
-      "projectPath": "C:\\projects\\sb-test\\sb-receiver\\sb-receiver.csproj",
+      "projectPath": "C:\\projects\\ServiceBusTest\\sb-receiver\\sb-receiver.csproj",
       "packagesPath": "C:\\Users\\andyrob\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\sb-test\\sb-receiver\\obj\\",
+      "outputPath": "C:\\projects\\ServiceBusTest\\sb-receiver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
